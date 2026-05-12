@@ -95,7 +95,7 @@ public class ProjekPerpus {
         dataBuku[jumlahData++] = new Buku(27, "Akuntansi Dasar", "Ekonomi", 10);
         dataBuku[jumlahData++] = new Buku(28, "Ekonomi Mikro", "Ekonomi", 8);
         dataBuku[jumlahData++] = new Buku(29, "Ekonomi Makro", "Ekonomi", 7);
-        dataBuku[jumlahData++] = new Buku(30, "Kewirausahaan", "Ekonomi", 13);
+        dataBuku[jumlahData++] = new Buku(30, "Kepemimpinan", "Ekonomi", 13);
     }
 
     static void tambahBuku() {
