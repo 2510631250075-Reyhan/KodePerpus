@@ -66,7 +66,7 @@ public class ProjekPerpus {
                 case 8:
                     cariKategori();
                     break;
-                case 8:
+                case 9:
                     System.out.println("Program selesai, Terima Kasih.");
                 default:
                     System.out.println("Pilihan tidak valid.");
