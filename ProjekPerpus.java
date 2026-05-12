@@ -227,10 +227,10 @@ public class ProjekPerpus {
             System.out.println("Stok     : " + dataBuku[i].stok);
 
             ditemukan = true;
+            }
         }
-    }
 
-    if (ditemukan == false) {
+        if (ditemukan == false) {
         System.out.println("Buku tidak ditemukan.");
         }
     }
@@ -349,7 +349,5 @@ static void cariKategori() {
     }
 
     System.out.println("================================================");
-}
     }
-
-    
+}
