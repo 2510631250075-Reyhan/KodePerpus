@@ -195,7 +195,7 @@ public class ProjekPerpus {
  
         System.out.println("\n=== MENCARI BUKU ===");
 
-        System.out.println("Masukkan nama buku7 : ");
+        System.out.println("Masukkan nama buku7: ");
         String cari = input.nextLine();
 
         boolean ditemukan = false;
