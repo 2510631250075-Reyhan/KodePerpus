@@ -125,7 +125,7 @@ public class ProjekPerpus {
         System.out.print("Masukkan Kategori Buku: ");
         String kategori = input.nextLine();
 
-        System.out.print("Masukkan Stok Buku: ");
+        System.out.print("Masukkan Stok" Buku: ");
         int stok = input.nextInt();
         input.nextLine();
 
