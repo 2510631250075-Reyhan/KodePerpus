@@ -40,11 +40,12 @@ class Buku {
                 System.out.println("8. Urutkan buku berdasarkan ID");
                 System.out.println("9. urutkan buku berdasarkan judul (Alphabetical)");
                 System.out.println("10.Urutkan buku berdasarkan stok ");
-                System.out.println("11. Update Status buku (Dipinjam/tersedia)");
-                System.out.println("12. Status ");
-                System.out.println("13. Keluar ");               
+                System.out.println("11.Update Status buku (Dipinjam/tersedia)");
+                System.out.println("12.Status ketersediaan buku ");
+                System.out.println("13 statistik data buku ");
+                System.out.println("14. Keluar ");               
 
-                System.out.print("Pilih menu: ");
+                System.out.print("Pilih menu:  ");
 
                 pilihan = input.nextInt();
                 input.nextLine();
@@ -87,12 +88,15 @@ class Buku {
                         counterBuku();
                         break;
                     case 13:
+                        statistikData();
+                        break;
+                    case 14:
                         System.out.println("Program selesai, Terima Kasih.");
                     default:
                     System.out.println("Pilihan tidak valid.");
                 }
 
-            } while (pilihan != 13);
+            } while (pilihan != 14);
         }
 
         static void isiDataAwal() {
@@ -498,4 +502,43 @@ class Buku {
         System.out.println("Total Buku Tersedia  : " + totalTersedia);
         System.out.println("Total Buku yang Dipinjam  : " + totalDipinjam);
     }
+    static void statistikData() {
+
+    int totalAktif = 0;
+    int totalTersedia = 0;
+    int totalDipinjam = 0;
+
+    for (int i = 0; i < jumlahData; i++) {
+
+        if (dataBuku[i].aktif == true) {
+
+            totalAktif++;
+
+            if (dataBuku[i].status.equalsIgnoreCase("Tersedia")) {
+                totalTersedia++;
+            }
+
+            if (dataBuku[i].status.equalsIgnoreCase("Dipinjam")) {
+                totalDipinjam++;
+            }
+        }
+    }
+
+    double persenTersedia = 0;
+    double persenDipinjam = 0;
+
+    if (totalAktif > 0) {
+        persenTersedia = (double) totalTersedia / totalAktif * 100;
+        persenDipinjam = (double) totalDipinjam / totalAktif * 100;
+    }
+
+    System.out.println("\n=== STATISTIK DATA BUKU ===");
+    System.out.println("Total Buku Aktif      : " + totalAktif);
+    System.out.println("Total Buku Tersedia   : " + totalTersedia);
+    System.out.println("Total Buku Dipinjam   : " + totalDipinjam);
+
+    System.out.printf("Persentase Tersedia   : %.2f%%\n", persenTersedia);
+    System.out.printf("Persentase Dipinjam   : %.2f%%\n", persenDipinjam);
+    }
+
 }
