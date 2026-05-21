@@ -41,8 +41,8 @@ class Buku {
                 System.out.println("9. urutkan buku berdasarkan judul (Alphabetical)");
                 System.out.println("10.Urutkan buku berdasarkan stok ");
                 System.out.println("11. Update Status buku (Dipinjam/tersedia)");
-                System.out.println("12. Status ketersediaan buku");
-                System.out.println(". Keluar ");               
+                System.out.println("12. Status ");
+                System.out.println("13. Keluar ");               
 
                 System.out.print("Pilih menu: ");
 
