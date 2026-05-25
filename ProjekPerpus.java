@@ -154,7 +154,7 @@ static void tampilHeader() {
     }
 
     static void tampilBaris(Buku b) {
-        System.out.printf("%-5d %-35s %-15s %-10d %-12s\n",
+        System.out.printf("%-5d %-35s %-5s %-10d %-12s\n",
                 b.id,
                 b.judul,
                 b.kategori,
