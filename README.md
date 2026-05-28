@@ -8,13 +8,23 @@ Project ini dibuat dengan menerapkan konsep struktur data dan algoritma seperti 
 Fitur Utama
 
 1.Menambahkan data buku
+
 2.Menampilkan daftar buku
+
 3.Mengedit data buku
+
 4.Menghapus data buku
+
 5.Searching data buku
+(Linear Dan  Binary Search)
+
 6.Sorting data buku
+(Bubble Dan Selection Sort)
+
 7.Pengelolaan status buku
+
 8.Penyimpanan data ke file
+
 
 Cara Menjalankan Program
 
@@ -22,7 +32,7 @@ Cara Menjalankan Program
 2. Buka project di VSCode
 3. Compile file Java
 4. Jalankan program melalui terminal atau IDE
-5. isi sesuai fitur yang dipilih
+5. Isi sesuai fitur yang dipilih
 
 Anggota Kelompok
 
